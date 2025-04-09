@@ -1,0 +1,146 @@
+@use '../helpers' as *;
+
+.header {
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	background-color: var(--color-white);
+	animation-name: scrolling-header;
+	animation-fill-mode: both;
+	animation-timeline: scroll();
+	animation-range: rem(100) rem(100);
+
+	@keyframes scrolling-header {
+		to {
+			box-shadow: 0 0 1rem 0 var(--color-black);
+		}
+	}
+
+	&__body {
+		padding-block: rem(30);
+		font-size: rem(20);
+
+		@include tablet {
+			padding-block: rem(24);
+			font-size: rem(15);
+		}
+
+		@include mobile {
+			padding-block: rem(20);
+		}
+
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__logo {
+		@include laptop {
+			padding: rem(10) rem(18);
+		}
+
+		@include tablet {
+			padding: unset;
+		}
+	}
+
+	&__overlay {
+		@include mobile-above {
+			display: contents;
+		}
+
+		@include tablet {
+			padding-block: rem(15);
+			font-size: rem(15);
+		}
+
+		@include mobile {
+			position: fixed;
+			inset: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: var(--color-white);
+			flex-direction: column;
+			row-gap: 1rem;
+			padding: 1rem;
+			transition-duration: var(--transition-duration);
+
+			&:not(.is-active) {
+				@include hide;
+
+				translate: 100%;
+			}
+		}
+	}
+
+	&__menu {
+		@include mobile {
+			overflow-y: auto;
+		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+			column-gap: rem(16);
+
+			@include laptop {
+				column-gap: rem(6);
+			}
+
+			@include mobile {
+				flex-direction: column;
+				row-gap: 1rem;
+			}
+		}
+
+		&-link {
+			padding: rem(15) rem(30);
+			text-transform: uppercase;
+
+			@include laptop {
+				padding: rem(10) rem(18);
+			}
+
+			&.is-active {
+				color: var(--color-white);
+				font-weight: 500;
+				background-color: var(--color-bright-pink);
+				border: #{rem(1)} solid var(--color-bright-pink);
+				border-radius: rem(10);
+				pointer-events: none;
+			}
+		}
+	}
+
+	&__auth-field {
+		button {
+			padding: rem(15) rem(30);
+			font-size: rem(20);
+		}
+		display: flex;
+		column-gap: rem(16);
+
+		@include laptop {
+			button {
+				padding: rem(10) rem(18);
+				font-size: rem(20);
+			}
+		}
+
+		@include tablet {
+			button {
+				padding: rem(10) rem(18);
+				font-size: rem(15);
+			}
+		}
+
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+			row-gap: rem(16);
+			max-width: rem(300);
+		}
+	}
+}

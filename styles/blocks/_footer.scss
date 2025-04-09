@@ -1,0 +1,27 @@
+@use '../helpers' as *;
+
+.footer {
+	&__body {
+		display: flex;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(35);
+		width: 50%;
+	}
+
+	&__image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+	}
+
+	&__extra {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
