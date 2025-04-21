@@ -3,6 +3,29 @@
 .soc1als {
 	&__list {
 		display: flex;
+		align-items: center;
 		column-gap: rem(20);
+
+		@include laptop {
+			column-gap: rem(14);
+		}
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__link {
+		width: rem(24);
+		height: rem(24);
+	}
+}
+
+.header-icons {
+	display: none;
+	@include mobile {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
 	}
 }

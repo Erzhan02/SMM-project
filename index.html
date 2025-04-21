@@ -49,6 +49,7 @@
 								sign up
 							</button>
 						</div>
+						<ul class="soc1als__list header-icons"></ul>
 					</div>
 					<button
 						class="header__burger-button burger-button visible-mobile"
@@ -64,80 +65,44 @@
 				</div>
 			</div>
 		</header>
-		<main class="main"></main>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__main container"></div>
+			</section>
+			<section class="team"></section>
+			<section class="pricing"></section>
+			<section class="testimonials"></section>
+			<section class="faq"></section>
+		</main>
 		<footer class="footer">
 			<div class="footer__inner container">
+				<div class="footer__title-wrapper">
+					<h2 class="footer__title">регистрация</h2>
+				</div>
 				<div class="footer__body">
 					<form action="" method="" class="footer__form">
-						<input type="text" placeholder="фио" />
-						<input type="text" placeholder="номер" />
-						<input type="email" placeholder="почта" />
-						<input type="text" placeholder="дополнительно" />
-						<button class="button" type="submit">регистрация</button>
+						<input type="text" placeholder="фио*" />
+						<input type="text" placeholder="номер*" />
+						<input type="email" placeholder="почта*" />
+						<input type="text" placeholder="дополнительно*" />
+						<button class="footer__form-button button" type="submit">
+							зарегистрироваться
+						</button>
 					</form>
 					<img
 						class="footer__image"
 						src="./images/woman.png"
 						alt=""
-						width="100%"
-						height="100%"
+						loading="lazy"
 					/>
 				</div>
 				<div class="footer__extra">
-					<a class="header__logo logo" href="/" aria-label="Home" title="Home">
+					<a class="footer__logo logo" href="/" aria-label="Home" title="Home">
 						smm.com
 					</a>
 					<div class="footer__soc1als soc1als">
-						<ul class="soc1als__list">
-							<li class="soc1als-item">
-								<a
-									href=""
-									class="soc1als__link"
-									target="_blank"
-									aria-label="Pinterest"
-									title="Pinterest"
-								>
-									<img
-										src="./icons/pinterest.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
-								</a>
-							</li>
-							<li class="soc1als-item">
-								<a
-									href=""
-									class="soc1als__link"
-									target="_blank"
-									aria-label="WhatsApp"
-									title="WhatsApp"
-								>
-									<img
-										src="./icons/whatsapp.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
-								</a>
-							</li>
-							<li class="soc1als-item">
-								<a
-									href=""
-									class="soc1als__link"
-									target="_blank"
-									aria-label="Twitter"
-									title="Twitter"
-								>
-									<img
-										src="./icons/twitter.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
-								</a>
-							</li>
-							<li class="soc1als-item">
+						<ul class="soc1als__list footer-icons">
+							<li class="soc1als__item">
 								<a
 									href=""
 									class="soc1als__link"
@@ -145,15 +110,10 @@
 									aria-label="Instagram"
 									title="Instagram"
 								>
-									<img
-										src="./icons/instagram.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
+									<img src="./icons/instagram.svg" alt="" />
 								</a>
 							</li>
-							<li class="soc1als-item">
+							<li class="soc1als__item">
 								<a
 									href=""
 									class="soc1als__link"
@@ -161,15 +121,22 @@
 									aria-label="Facebook"
 									title="Facebook"
 								>
-									<img
-										src="./icons/facebook.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
+									<img src="./icons/facebook.svg" alt="" />
 								</a>
 							</li>
-							<li class="soc1als-item">
+							<li class="soc1als__item">
+								<a
+									href=""
+									class="soc1als__link"
+									target="_blank"
+									aria-label="Twitter"
+									title="Twitter"
+								>
+									<img src="./icons/twitter.svg" alt="" />
+								</a>
+							</li>
+
+							<li class="soc1als__item">
 								<a
 									href=""
 									class="soc1als__link"
@@ -177,15 +144,21 @@
 									aria-label="Telegram"
 									title="Telegram"
 								>
-									<img
-										src="./icons/telegram.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
+									<img src="./icons/telegram.svg" alt="" />
 								</a>
 							</li>
-							<li class="soc1als-item">
+							<li class="soc1als__item">
+								<a
+									href=""
+									class="soc1als__link"
+									target="_blank"
+									aria-label="WhatsApp"
+									title="WhatsApp"
+								>
+									<img src="./icons/whatsapp.svg" alt="" />
+								</a>
+							</li>
+							<li class="soc1als__item">
 								<a
 									href=""
 									class="soc1als__link"
@@ -193,10 +166,10 @@
 									aria-label="Tiktok"
 									title="Tiktok"
 								>
-									<img src="./icons/tiktok.svg" alt="" width="24" height="24" />
+									<img src="./icons/tiktok.svg" alt="" />
 								</a>
 							</li>
-							<li class="soc1als-item">
+							<li class="soc1als__item">
 								<a
 									href=""
 									class="soc1als__link"
@@ -204,12 +177,18 @@
 									aria-label="Behance"
 									title="Behance"
 								>
-									<img
-										src="./icons/behance.svg"
-										alt=""
-										width="24"
-										height="24"
-									/>
+									<img src="./icons/behance.svg" alt="" />
+								</a>
+							</li>
+							<li class="soc1als__item">
+								<a
+									href=""
+									class="soc1als__link"
+									target="_blank"
+									aria-label="Pinterest"
+									title="Pinterest"
+								>
+									<img src="./icons/pinterest.svg" alt="" />
 								</a>
 							</li>
 						</ul>

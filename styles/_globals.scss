@@ -115,6 +115,7 @@ button {
 		&::before {
 			@include abs-center;
 			@include square(rem(44));
+			pointer-events: none;
 
 			content: '';
 		}

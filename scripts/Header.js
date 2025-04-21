@@ -1,38 +1,30 @@
-class Header {
-	selectors = {
-		root: '[data-js-header]',
-		overlay: '[data-js-header-overlay]',
-		burgerButton: '[data-js-header-burger-button]',
-	};
+const selectors = {
+	root: '[data-js-header]',
+	overlay: '[data-js-header-overlay]',
+	burgerButton: '[data-js-header-burger-button]',
+};
 
-	stateClasses = {
-		isActive: 'is-active',
-		isLock: 'is-lock',
-	};
+const stateClasses = {
+	isActive: 'is-active',
+	isLock: 'is-lock',
+};
 
-	constructor() {
-		this.rootElement = document.querySelector(this.selectors.root);
-		this.overlayElement = this.rootElement.querySelector(
-			this.selectors.overlay
-		);
-		this.burgerButtonElement = this.rootElement.querySelector(
-			this.selectors.burgerButton
-		);
-		this.bindEvents();
+function initHeader() {
+	const rootElement = document.querySelector(selectors.root);
+	if (!rootElement) return;
+
+	const overlayElement = rootElement.querySelector(selectors.overlay);
+	const burgerButtonElement = rootElement.querySelector(selectors.burgerButton);
+
+	if (!overlayElement || !burgerButtonElement) return;
+
+	function onBurgerButtonClick() {
+		burgerButtonElement.classList.toggle(stateClasses.isActive);
+		overlayElement.classList.toggle(stateClasses.isActive);
+		document.documentElement.classList.toggle(stateClasses.isActive);
 	}
 
-	onBurgerButtonClick = () => {
-		this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
-		this.overlayElement.classList.toggle(this.stateClasses.isActive);
-		document.documentElement.classList.toggle(this.stateClasses.isActive);
-	};
-
-	bindEvents() {
-		this.burgerButtonElement.addEventListener(
-			'click',
-			this.onBurgerButtonClick
-		);
-	}
+	burgerButtonElement.addEventListener('click', onBurgerButtonClick);
 }
 
-export default Header;
+export default initHeader;

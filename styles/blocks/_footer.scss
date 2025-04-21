@@ -1,27 +1,108 @@
 @use '../helpers' as *;
 
 .footer {
+	&__title {
+		color: #000000;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
 	&__body {
 		display: flex;
+		justify-content: space-evenly;
+		border-bottom: rem(2) solid var(--color-black);
+		padding-block: rem(130);
+
+		@include mobile {
+			padding-block: rem(65);
+
+			justify-content: center;
+		}
 	}
 
 	&__form {
 		display: flex;
 		flex-direction: column;
 		row-gap: rem(35);
-		width: 50%;
+		width: rem(420);
+
+		@include mobile {
+			width: 50%;
+		}
+
+		@include mobile-s {
+			width: 100%;
+		}
+
+		input {
+			font-size: rem(16);
+			font-weight: 300;
+			border: none;
+			border-bottom: rem(2) solid var(--color-black);
+			padding: rem(20) rem(10);
+		}
+
+		input[placeholder='фио*'] {
+			&::placeholder {
+				text-transform: uppercase;
+			}
+		}
+		input {
+			&::placeholder {
+				text-transform: capitalize;
+				color: var(--color-black);
+			}
+		}
+	}
+	&__form-button {
+		margin-top: rem(70);
+		align-self: self-start;
+		font-weight: 700;
+		padding: rem(13) rem(33);
+		font-size: rem(20);
+
+		@include tablet {
+			font-size: rem(15);
+		}
+
+		@include mobile-s {
+			width: 100%;
+		}
 	}
 
 	&__image {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 50%;
+		align-self: center;
+		width: rem(420);
+		height: rem(370);
+	}
+
+	&__logo {
+		@include tablet {
+			font-size: rem(15);
+		}
+	}
+
+	&__copyright {
+		transition-duration: var(--transition-duration-slow);
+		@include tablet {
+			font-size: rem(15);
+		}
 	}
 
 	&__extra {
+		transition-duration: var(--transition-duration-slow);
+		padding: rem(70) rem(35);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-align: center;
+		gap: rem(15);
+
+		@include mobile-s {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			gap: rem(15);
+		}
 	}
 }
