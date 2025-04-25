@@ -22,4 +22,10 @@
 		background-color: var(--color-bright-pink);
 		border-color: var(--color-bright-pink);
 	}
+
+	@include active {
+		color: var(--color-bright-pink);
+		background-color: var(--color-white);
+		border-color: var(--color-bright-pink);
+	}
 }

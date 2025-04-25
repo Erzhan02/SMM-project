@@ -1,0 +1,113 @@
+@use '../helpers' as *;
+
+.program {
+	background-color: var(--color-dark-blue);
+
+	&__main {
+		padding-block: rem(130);
+
+		@include mobile {
+			padding-block: rem(65);
+		}
+	}
+
+	&__title {
+		color: var(--color-white);
+		font-weight: 600;
+		font-size: rem(40);
+		padding-bottom: rem(70);
+
+		@include tablet {
+			font-size: rem(30);
+		}
+
+		@include mobile {
+			font-size: rem(20);
+			padding-bottom: rem(35);
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-rows: repeat(11, auto);
+
+		&-box {
+			display: flex;
+			justify-content: space-between;
+			padding-block: rem(30);
+
+			border-bottom: rem(2) dashed var(--color-white);
+
+			img {
+				align-self: center;
+			}
+
+			@include mobile-s {
+				flex-direction: column;
+				gap: rem(20);
+
+				img {
+					align-self: center;
+				}
+			}
+		}
+	}
+
+	&__icon {
+		width: rem(46);
+		height: rem(46);
+
+		@include mobile {
+			width: rem(23);
+			height: rem(23);
+		}
+	}
+
+	&__description {
+		display: flex;
+		gap: rem(24);
+
+		@include mobile-s {
+			gap: rem(12);
+		}
+
+		&-number {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: rem(45);
+			height: rem(45);
+			font-weight: 600;
+			font-size: rem(20);
+			color: var(--color-white);
+			padding: rem(10) rem(18);
+			border: rem(2) solid var(--color-bright-pink);
+			border-radius: rem(60);
+		}
+
+		&-text {
+			h3 {
+				font-weight: 500;
+				font-size: rem(26);
+				margin: unset;
+				margin-bottom: rem(20);
+
+				@include mobile {
+					font-size: rem(13);
+				}
+			}
+
+			p {
+				font-weight: 300;
+				font-size: rem(20);
+				color: var(--color-white);
+				margin: unset;
+
+				@include mobile {
+					font-size: rem(10);
+				}
+			}
+		}
+	}
+}

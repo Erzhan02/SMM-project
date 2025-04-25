@@ -1,10 +1,29 @@
 @use '../helpers' as *;
 
 .footer {
+	&__inner {
+		padding-block: rem(130) rem(0);
+
+		@include mobile {
+			padding-block: rem(65) rem(0);
+		}
+	}
+
 	&__title {
-		color: #000000;
+		color: var(--color-black);
 		text-transform: uppercase;
 		font-weight: 600;
+		font-size: rem(40);
+		padding-bottom: rem(70);
+
+		@include tablet {
+			font-size: rem(30);
+		}
+
+		@include mobile {
+			font-size: rem(20);
+			padding-bottom: rem(35);
+		}
 	}
 
 	&__body {
@@ -70,9 +89,15 @@
 		}
 	}
 
+	&__image-wrapper {
+		@include mobile {
+			display: none;
+		}
+	}
+
 	&__image {
 		align-self: center;
-		width: rem(420);
+		width: rem(410);
 		height: rem(370);
 	}
 

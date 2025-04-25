@@ -1,0 +1,151 @@
+@use '../helpers' as *;
+
+.participation {
+	&__main {
+		padding-block: rem(130);
+
+		@include mobile {
+			padding-block: rem(65);
+		}
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+
+		@include mobile {
+			align-items: center;
+		}
+	}
+
+	&__title {
+		align-self: flex-start;
+		color: var(--color-black);
+		font-weight: 600;
+		font-size: rem(40);
+		padding-bottom: rem(70);
+
+		@include tablet {
+			font-size: rem(30);
+		}
+
+		@include mobile {
+			font-size: rem(20);
+			padding-bottom: rem(35);
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: start;
+		gap: rem(50);
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include mobile {
+			width: 50%;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__content-box {
+		display: flex;
+		flex-direction: column;
+		gap: rem(60);
+		padding: rem(50) rem(30);
+		background-color: var(--color-dark-blue);
+		border-radius: rem(10);
+
+		@include mobile {
+			gap: rem(30);
+			padding: rem(25) rem(15);
+
+			align-items: center;
+		}
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		gap: rem(20);
+		color: var(--color-white);
+		h3 {
+			margin: unset;
+			font-weight: 500;
+			font-size: rem(26);
+
+			@include mobile {
+				font-size: rem(13);
+			}
+		}
+
+		p {
+			font-weight: 300;
+			font-size: rem(20);
+
+			@include mobile {
+				font-size: rem(10);
+			}
+		}
+	}
+
+	&__topics-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: rem(20);
+	}
+
+	&__topics {
+		display: flex;
+		align-items: center;
+		gap: rem(16);
+
+		img {
+			width: rem(18);
+			height: rem(16);
+
+			@include mobile {
+				width: rem(9);
+				height: rem(8);
+			}
+		}
+
+		p {
+			color: var(--color-white);
+			font-weight: 300;
+			font-size: rem(20);
+
+			@include mobile {
+				font-size: rem(10);
+			}
+		}
+	}
+
+	&__cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: rem(30);
+		a {
+			text-decoration: none;
+			color: var(--color-white);
+			font-weight: 300;
+			font-size: rem(20);
+
+			@include mobile {
+				font-size: rem(10);
+			}
+		}
+
+		button {
+			font-weight: 700;
+			font-size: rem(20);
+
+			@include mobile {
+				font-size: rem(10);
+			}
+		}
+	}
+}

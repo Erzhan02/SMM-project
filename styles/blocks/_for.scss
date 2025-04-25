@@ -1,0 +1,72 @@
+@use '../helpers' as *;
+
+.for {
+	background-color: var(--color-dark-blue);
+
+	&__main {
+		padding-block: rem(130);
+
+		@include mobile {
+			padding-block: rem(65);
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		gap: rem(40) rem(120);
+
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
+
+		&-box {
+			display: flex;
+			gap: rem(25);
+
+			@include mobile-s {
+				flex-direction: column;
+
+				img {
+					align-self: center;
+				}
+			}
+
+			img {
+				width: rem(46);
+				height: rem(46);
+
+				@include mobile-s {
+					width: rem(23);
+					height: rem(23);
+				}
+			}
+			p {
+				color: var(--color-white);
+				font-weight: 300;
+				font-size: rem(20);
+
+				@include mobile {
+					font-size: rem(10);
+				}
+			}
+		}
+	}
+
+	&__title {
+		color: var(--color-white);
+		font-weight: 600;
+		font-size: rem(40);
+		padding-bottom: rem(70);
+
+		@include tablet {
+			font-size: rem(30);
+		}
+
+		@include mobile {
+			font-size: rem(20);
+			padding-bottom: rem(35);
+		}
+	}
+}

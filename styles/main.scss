@@ -11,3 +11,17 @@
 @use 'blocks/header';
 @use 'blocks/soc1als';
 @use 'blocks/footer';
+
+@use 'blocks/hero';
+@use 'blocks/for';
+@use 'blocks/team';
+@use 'blocks/program';
+@use 'blocks/participation';
+@use 'blocks/skills';
+@use 'blocks/testimonials';
+@use 'blocks/faq';
+
+// header,
+// footer {
+// 	display: none !important;
+// }

@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+
+.hero {
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: rem(30);
+	}
+
+	&__main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: rem(20);
+
+		padding-block: rem(130);
+
+		@include mobile {
+			width: 80%;
+			grid-template-columns: 3fr;
+
+			padding-block: rem(65);
+		}
+	}
+
+	&__image-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&__image {
+		align-self: center;
+		width: rem(410);
+		height: rem(370);
+	}
+
+	&__title {
+		font-size: rem(40);
+		font-weight: 600;
+		color: var(--color-black);
+
+		@include tablet {
+			font-size: rem(30);
+		}
+
+		@include mobile {
+			font-size: rem(20);
+		}
+	}
+
+	&__description {
+		font-size: rem(22);
+		font-weight: 300;
+
+		@include mobile {
+			font-size: rem(11);
+		}
+	}
+
+	&__button {
+		margin-top: rem(50);
+		font-weight: 700;
+		font-size: rem(20);
+
+		@include mobile {
+			font-size: rem(10);
+			margin: unset;
+		}
+	}
+}
