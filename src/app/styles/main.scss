@@ -8,9 +8,9 @@
 @use 'blocks/logo';
 @use 'blocks/button';
 @use 'blocks/burger-button';
-@use 'blocks/header';
+@use '@components/Header/ui/Header';
 @use 'blocks/soc1als';
-@use 'blocks/footer';
+@use '@components/Footer/ui/footer';
 
 @use 'blocks/hero';
 @use 'blocks/for';
@@ -20,8 +20,3 @@
 @use 'blocks/skills';
 @use 'blocks/testimonials';
 @use 'blocks/faq';
-
-// header,
-// footer {
-// 	display: none !important;
-// }
