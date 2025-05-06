@@ -6,17 +6,17 @@
 
 @use 'blocks/icon';
 @use 'blocks/logo';
-@use 'blocks/button';
+@use '@components/Button/ui/Button';
 @use 'blocks/burger-button';
 @use '@components/Header/ui/Header';
 @use 'blocks/soc1als';
 @use '@components/Footer/ui/footer';
 
-@use 'blocks/hero';
-@use 'blocks/for';
-@use 'blocks/team';
-@use 'blocks/program';
-@use 'blocks/participation';
-@use 'blocks/skills';
-@use 'blocks/testimonials';
-@use 'blocks/faq';
+@use '@components/Hero/ui/Hero';
+@use '@components/For/ui/For';
+@use '@components/Team/ui/Team';
+@use '@components/Program/ui/Program';
+@use '@components/Participation/ui/Participation';
+@use '@components/Skills/ui/Skills';
+@use '@components/Testimonials/ui/Testimonials';
+@use '@components/FAQ/ui/FAQ';

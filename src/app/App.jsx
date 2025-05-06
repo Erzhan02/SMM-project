@@ -1,9 +1,8 @@
+import ProgramsPage from '@/pages/ProgramsPage/ui/ProgramsPage';
 import CuratorsPage from '@pages/CuratorsPage/ui/CuratorsPage';
 import HomePage from '@pages/HomePage/ui/HomePage';
 import OtherPage from '@pages/OtherPage/ui/OtherPage';
-import ProgramsPage from '@pages/ProgramsPage/ui/ProgramsPage';
 import TariffsPage from '@pages/TariffsPage/ui/TariffsPage';
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 const App = () => {

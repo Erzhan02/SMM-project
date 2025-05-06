@@ -1,10 +1,11 @@
+import Team from '@/components/Team/ui/Team';
 import Header from '@components/Header/ui/Header';
-import React from 'react';
 
 const CuratorsPage = () => {
 	return (
 		<div>
 			<Header />
+			<Team />
 		</div>
 	);
 };

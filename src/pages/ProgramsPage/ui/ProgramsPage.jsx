@@ -1,10 +1,11 @@
-import Header from '@components/Header/ui/Header';
-import React from 'react';
+import Header from '@/components/Header/ui/Header';
+import Program from '@/components/Program/ui/Program';
 
 const ProgramsPage = () => {
 	return (
 		<div>
 			<Header />
+			<Program />
 		</div>
 	);
 };

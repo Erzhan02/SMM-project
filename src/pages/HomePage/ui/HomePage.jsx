@@ -1,11 +1,13 @@
+import Main from '@/components/Main/ui/Main';
+import Footer from '@components/Footer/ui/Footer';
 import Header from '@components/Header/ui/Header';
-import React from 'react';
 
 const HomePage = () => {
 	return (
 		<div>
 			<Header />
-			12344
+			<Main />
+			<Footer />
 		</div>
 	);
 };
