@@ -14,7 +14,7 @@ export default defineConfig({
 	plugins: [react(), Inspect()],
 
 	resolve: {
-		alias: {
+		alias: { 
 			'@': path.resolve(__dirname, 'src'),
 			'@helpers': path.resolve(__dirname, 'src/app/styles/helpers'),
 			'@pages': path.resolve(__dirname, 'src/pages'),
