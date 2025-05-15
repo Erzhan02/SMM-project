@@ -1,13 +1,13 @@
-import './For.scss';
+import AppSection from '@/shared/ui/AppSection/ui/AppSection';
 
 const For = () => {
 	return (
-		<section class='for'>
-			<div class='for__main container'>
-				<div class='for__body'>
-					<h2 class='for__title'>КУРС ДЛЯ ТЕБЯ ЕСЛИ:</h2>
-					<div class='for__content'>
-						<div class='for__content-box'>
+		<AppSection className='for'>
+			<div className='for__main container'>
+				<div className='for__body'>
+					<h2 className='for__title'>КУРС ДЛЯ ТЕБЯ ЕСЛИ:</h2>
+					<div className='for__content'>
+						<div className='for__content-box'>
 							<img src='./icons/scroll.svg' alt='' />
 							<p>
 								Ты владелец бизнеса, фрилансер или крутой стартапер, наш курс -
@@ -17,7 +17,7 @@ const For = () => {
 								империи?
 							</p>
 						</div>
-						<div class='for__content-box'>
+						<div className='for__content-box'>
 							<img src='./icons/schedule.svg' alt='' />
 							<p>
 								Ты маркетолог, PR-чудо или просто рекламный гуру, то наш курс
@@ -27,7 +27,7 @@ const For = () => {
 								и покори своей маркетинговой магией!
 							</p>
 						</div>
-						<div class='for__content-box'>
+						<div className='for__content-box'>
 							<img src='./icons/constellation.svg' alt='' />
 							<p>
 								Ты любишь создавать контент, блогеришь или мечтаешь стать
@@ -38,21 +38,21 @@ const For = () => {
 								корону соцсетей?
 							</p>
 						</div>
-						<div class='for__content-box'>
-							<img src='./icons/pensil.svg' alt='' />
+						<div className='for__content-box'>
+							<img src='./icons/pencil.svg' alt='' />
 							<p>
 								Соцсети - это твое второе дыхание, ты знаешь все интернет-мемы и
 								хочешь погрузиться в мир соцмедиа, то наш курс - это твой билет
 								в путешествие по соцмедиа-чудесам! Открой для себя секреты
 								вирусного контента, общайся с аудиторией на языке мемов и стань
 								истинным гуру соцсетей. Готов отправиться в увлекательное
-								приключение соцмедиа-странством?
+								приключение соцмедиа-пространством?
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</AppSection>
 	);
 };
 

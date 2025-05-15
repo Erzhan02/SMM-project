@@ -1,3 +1,4 @@
+import AppSection from '@/shared/ui/AppSection/ui/AppSection';
 import bulb from '@i/bulb.svg';
 import clock from '@i/clock.svg';
 import community from '@i/community.svg';
@@ -10,7 +11,7 @@ const icons = [clock, cup, bulb, document, gallery, community];
 
 const Program = () => {
 	return (
-		<section className='program'>
+		<AppSection className='program'>
 			<div className='program__main container'>
 				<div className='program__body'>
 					<h2 className='program__title'>ПРОГРАММА КУРСА</h2>
@@ -38,7 +39,7 @@ const Program = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</AppSection>
 	);
 };
 

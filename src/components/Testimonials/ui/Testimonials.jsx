@@ -1,19 +1,22 @@
+import AppButton from '@/shared/ui/AppButton/ui/AppButton';
+import AppSection from '@/shared/ui/AppSection/ui/AppSection';
+
 const Testimonials = () => {
 	return (
-		<section class='testimonials'>
-			<div class='testimonials__main container'>
-				<div class='testimonials__body wrapper'>
-					<h2 class='testimonials__title'>ОТЗЫВЫ</h2>
-					<div class='testimonials__content'>
-						<div class='testimonials__content-box'>
-							<button class='prev'>
+		<AppSection className='testimonials'>
+			<div className='testimonials__main container'>
+				<div className='testimonials__body wrapper'>
+					<h2 className='testimonials__title'>ОТЗЫВЫ</h2>
+					<div className='testimonials__content'>
+						<div className='testimonials__content-box'>
+							<AppButton className='prev'>
 								<img src='./icons/left-arrow.svg' alt='' />
-							</button>
+							</AppButton>
 						</div>
-						<div class='testimonials__content-box track'>
-							<div class='testimonials__content-box carousel'>
+						<div className='testimonials__content-box track'>
+							<div className='testimonials__content-box carousel'>
 								<img src='./images/kolya.png' alt='' />
-								<div class='testimonials__text'>
+								<div className='testimonials__text'>
 									<h3>Николай</h3>
 									<p>
 										It is a long established fact that a reader will be
@@ -22,9 +25,9 @@ const Testimonials = () => {
 									</p>
 								</div>
 							</div>
-							<div class='testimonials__content-box carousel'>
+							<div className='testimonials__content-box carousel'>
 								<img src='./images/kolya.png' alt='' />
-								<div class='testimonials__text'>
+								<div className='testimonials__text'>
 									<h3>Николай</h3>
 									<p>
 										It is a long established fact that a reader will be
@@ -33,9 +36,9 @@ const Testimonials = () => {
 									</p>
 								</div>
 							</div>
-							<div class='testimonials__content-box carousel'>
+							<div className='testimonials__content-box carousel'>
 								<img src='./images/kolya.png' alt='' />
-								<div class='testimonials__text'>
+								<div className='testimonials__text'>
 									<h3>Николай</h3>
 									<p>
 										It is a long established fact that a reader will be
@@ -45,15 +48,15 @@ const Testimonials = () => {
 								</div>
 							</div>
 						</div>
-						<div class='testimonials__content-box'>
-							<button class='next'>
+						<div className='testimonials__content-box'>
+							<AppButton className='next'>
 								<img src='./icons/right-arrow.svg' alt='' />
-							</button>
+							</AppButton>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</AppSection>
 	);
 };
 

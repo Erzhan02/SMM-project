@@ -1,3 +1,6 @@
+import AppButton from '@/shared/ui/AppButton/ui/AppButton';
+import AppLink from '@/shared/ui/AppLink/ui/AppLink';
+
 const Footer = () => {
 	return (
 		<footer className='footer'>
@@ -11,9 +14,9 @@ const Footer = () => {
 						<input type='text' placeholder='номер*' />
 						<input type='email' placeholder='почта*' />
 						<input type='text' placeholder='дополнительно*' />
-						<button className='footer__form-button button' type='submit'>
+						<AppButton className='footer__form-button button' type='submit'>
 							зарегистрироваться
-						</button>
+						</AppButton>
 					</form>
 					<div className='footer__image-wrapper'>
 						<img
@@ -25,109 +28,109 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className='footer__extra'>
-					<a
+					<AppLink
 						className='footer__logo logo'
-						href='/'
-						aria-label='Home'
+						to='/'
+						ariaLabel='Home'
 						title='Home'
 					>
 						smm.com
-					</a>
+					</AppLink>
 					<div className='footer__soc1als soc1als'>
 						<ul className='soc1als__list footer-icons'>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Instagram'
+									ariaLabel='Instagram'
 									title='Instagram'
 								>
 									<img src='./icons/instagram.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Facebook'
+									ariaLabel='Facebook'
 									title='Facebook'
 								>
 									<img src='./icons/facebook.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Twitter'
+									ariaLabel='Twitter'
 									title='Twitter'
 								>
 									<img src='./icons/twitter.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Telegram'
+									ariaLabel='Telegram'
 									title='Telegram'
 								>
 									<img src='./icons/telegram.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='WhatsApp'
+									ariaLabel='WhatsApp'
 									title='WhatsApp'
 								>
 									<img src='./icons/whatsapp.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Tiktok'
+									ariaLabel='Tiktok'
 									title='Tiktok'
 								>
 									<img src='./icons/tiktok.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Behance'
+									ariaLabel='Behance'
 									title='Behance'
 								>
 									<img src='./icons/behance.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 							<li className='soc1als__item'>
-								<a
-									href=''
+								<AppLink
+									to=''
 									className='soc1als__link'
 									target='_blank'
-									aria-label='Pinterest'
+									ariaLabel='Pinterest'
 									title='Pinterest'
 								>
 									<img src='./icons/pinterest.svg' alt='' />
-								</a>
+								</AppLink>
 							</li>
 						</ul>
 					</div>
 					<p className='footer__copyright'>
-						@ <time datetime='2025'>2025</time> SMM.COM. All rights reserved
+						@ <time dateTime='2025'>2025</time> SMM.COM. All rights reserved
 					</p>
 				</div>
 			</div>

@@ -9,7 +9,7 @@ import Testimonials from '@/components/Testimonials/ui/Testimonials';
 
 const Main = () => {
 	return (
-		<main class='main'>
+		<main className='main'>
 			<Hero />
 			<For />
 			<Team />

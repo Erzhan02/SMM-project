@@ -1,11 +1,14 @@
+import AppButton from '@/shared/ui/AppButton/ui/AppButton';
+import AppSection from '@/shared/ui/AppSection/ui/AppSection';
+
 const FAQ = () => {
 	return (
-		<section class='faq'>
-			<div class='faq__main container'>
-				<div class='faq__body'>
-					<h2 class='faq__title'>ЧЕМУ ВЫ НАУЧИТЕСЬ</h2>
-					<div class='faq__content'>
-						<div class='faq__content-box'>
+		<AppSection className='faq'>
+			<div className='faq__main container'>
+				<div className='faq__body'>
+					<h2 className='faq__title'>ЧЕМУ ВЫ НАУЧИТЕСЬ</h2>
+					<div className='faq__content'>
+						<div className='faq__content-box'>
 							<h3>It is a long established fact that.?</h3>
 							<p>
 								It is a long established fact that a reader will be distracted
@@ -14,11 +17,11 @@ const FAQ = () => {
 								normal distribution of letters, as opposed to using 'Content
 								here, content here', making it look like readable English.
 							</p>
-							<button class='faq__question-icon'>
+							<AppButton className='faq__question-icon'>
 								<img src='./icons/question.svg' alt='' />
-							</button>
+							</AppButton>
 						</div>
-						<div class='faq__content-box'>
+						<div className='faq__content-box'>
 							<h3>It is a long established fact that.?</h3>
 							<p>
 								It is a long established fact that a reader will be distracted
@@ -27,11 +30,11 @@ const FAQ = () => {
 								normal distribution of letters, as opposed to using 'Content
 								here, content here', making it look like readable English.
 							</p>
-							<button class='faq__question-icon'>
+							<AppButton className='faq__question-icon'>
 								<img src='./icons/question.svg' alt='' />
-							</button>
+							</AppButton>
 						</div>
-						<div class='faq__content-box'>
+						<div className='faq__content-box'>
 							<h3>It is a long established fact that.?</h3>
 							<p>
 								It is a long established fact that a reader will be distracted
@@ -40,14 +43,14 @@ const FAQ = () => {
 								normal distribution of letters, as opposed to using 'Content
 								here, content here', making it look like readable English.
 							</p>
-							<button class='faq__question-icon'>
+							<AppButton className='faq__question-icon'>
 								<img src='./icons/question.svg' alt='' />
-							</button>
+							</AppButton>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</AppSection>
 	);
 };
 
